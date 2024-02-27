@@ -7,7 +7,7 @@
         "CidrBlock": "172.16.0.0/16",
         "InstanceTenancy": "default",
         "EnableDnsSupport": "true",
-        "EnableDnsHostnames": "true",
+        "EnableDnsHostnames": "false",
         "Tags": [
           {
             "Key": "Name",
@@ -52,7 +52,7 @@
       "Type": "AWS::EC2::Subnet",
       "Properties": {
         "CidrBlock": "172.16.16.0/20",
-        "AvailabilityZone": "ap-south-1b",
+        "AvailabilityZone": "us-east-1b",
         "VpcId": {
           "Ref": "vpc09d263d537a303c29"
         },
@@ -70,7 +70,7 @@
         "Tags": [
           {
             "Key": "Name",
-            "Value": "techinfo_IGW"
+            "Value": "techminfo_IGW"
           }
         ]
       }
@@ -85,7 +85,7 @@
       }
     },
     "acl0ff26a9864c47d84d": {
-      "Type": "AWS::EC2::NetworkAcl",
+      "Type": "AWS::EC2::Networkigw",
       "Properties": {
         "VpcId": {
           "Ref": "vpc09d263d537a303c29"
