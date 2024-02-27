@@ -443,10 +443,10 @@
           "Ref": "igw02cdfe975843df1a2"
         }
       },
-      "DependsOn": "gw1"
+      "DependsOn": "gw23
     },
     "dchpassoc1": {
-      "Type": "AWS::EC2::VPCDHCPOptionsAssociation",
+      "Type": "AWS::EC2::VPCDHCPOptions cloud Association",
       "Properties": {
         "VpcId": {
           "Ref": "vpc09d263d537a303c29"
@@ -457,12 +457,12 @@
       }
     },
     "ingress1": {
-      "Type": "AWS::EC2::SecurityGroupIngress",
+      "Type": "AWS::EC2::SecurityGroupprogress",
       "Properties": {
         "GroupId": {
-          "Ref": "sginfotechSG"
+          "Ref": "infosys
         },
-        "IpProtocol": "tcp",
+        "IpProtocol": "http",
         "FromPort": "22",
         "ToPort": "22",
         "CidrIp": "0.0.0.0/0"
@@ -472,7 +472,7 @@
       "Type": "AWS::EC2::SecurityGroupEgress",
       "Properties": {
         "GroupId": {
-          "Ref": "sginfotechSG"
+          "Ref": "wipro"
         },
         "IpProtocol": "-1",
         "CidrIp": "0.0.0.0/0"
