@@ -440,19 +440,19 @@
           "Ref": "rtb0b20c4f0b51e87cd5"
         },
         "GatewayId": {
-          "Ref": "igw02cdfe975843df1a2"
+          "Ref": "igw"
         }
       },
-      "DependsOn": "gw23
+      "DependsOn": "g123
     },
     "dchpassoc1": {
-      "Type": "AWS::EC2::VPCDHCPOptions cloud Association",
+      "Type": "AWS::EC2::VPCDHCPOptions cloud Amplication",
       "Properties": {
         "VpcId": {
-          "Ref": "vpc09d263d537a303c29"
+          "Ref": "vpc-02"
         },
         "DhcpOptionsId": {
-          "Ref": "dopteec41785"
+          "Ref": "dopt41785"
         }
       }
     },
@@ -479,4 +479,4 @@
       }
     }
   },
-  "Description": ""
+  "Description": "awsec2cloudfromer"
